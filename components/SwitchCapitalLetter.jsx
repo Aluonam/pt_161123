@@ -2,7 +2,11 @@ import React from 'react'
 
 const SwitchCapitalLetter = () => {
   return (
-    <div>SwitchCapitalLetter</div>
+    <>
+    <input placeholder='Escribe una frase'></input>
+    <br/>
+    <button>Cambia a mayúsculas</button>
+    </>
   )
 }
 
