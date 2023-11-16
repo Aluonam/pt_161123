@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
-const App = ({inputPassword}) => {
+const ModalPassword = ({inputPassword}) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
@@ -23,4 +23,4 @@ const App = ({inputPassword}) => {
     </>
   );
 };
-export default App;
+export default ModalPassword;

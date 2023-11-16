@@ -3,13 +3,13 @@ import ModalCounter from './Modalcounter'
 
 const Counter = () => {
 
-    const [number, setNumber] = useState(0)
+    const [numberCounter, setNumberCounter] = useState(0)
   return (
     <>
-    {number}
-    <button onClick={()=>{setNumber(number+1)}}>+</button>
-    <button onClick={()=>{setNumber(number-1)}}>-</button>
-    <ModalCounter></ModalCounter>
+    {numberCounter}
+    <button onClick={()=>{setNumberCounter(numberCounter+1)}}>+</button>
+    <button onClick={()=>{setNumberCounter(numberCounter-1)}}>-</button>
+    <ModalCounter numberCounter={numberCounter}></ModalCounter>
     </>
   )
 }

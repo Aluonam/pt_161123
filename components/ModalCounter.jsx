@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
-const ModalCounter = () => {
+
+
+const ModalCounter = ({numberCounter}) => {
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
@@ -14,10 +17,10 @@ const ModalCounter = () => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Open Modal
+        Mira el contador
       </Button>
-      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        <p>Some contents...</p>
+      <Modal title="Contador" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        {numberCounter}
       </Modal>
     </>
   );
