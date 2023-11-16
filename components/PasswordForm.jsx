@@ -7,7 +7,8 @@ const PasswordForm = () => {
   return (
     <>
     <input placeholder='password' type='password' onChange={(e)=>{setInputPassword(e.target.value)}}></input>
-    <ModalPassword></ModalPassword>
+    <br></br>
+    <ModalPassword inputPassword={inputPassword}></ModalPassword>
     </>
   )
 }

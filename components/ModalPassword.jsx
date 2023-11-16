@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
-const App = () => {
+const App = ({inputPassword}) => {
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
@@ -14,10 +15,10 @@ const App = () => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-        Open Modal
+         visualiza la contraseña 
       </Button>
-      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        
+      <Modal title="La contraseña es:" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        {inputPassword}
       </Modal>
     </>
   );
