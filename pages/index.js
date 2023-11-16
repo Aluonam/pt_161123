@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import SwitchCapitalLetter from '@/components/SwitchCapitalLetter'
 import PasswordForm from '@/components/PasswordForm'
+import ModalCounter from '@/components/Modalcounter'
 
 
 export default function Home() {
@@ -17,6 +18,8 @@ export default function Home() {
        <SwitchCapitalLetter></SwitchCapitalLetter>
        <br></br>
        <PasswordForm></PasswordForm>
+       <br></br>
+       <ModalCounter></ModalCounter>
       </main>
     </>
   )
