@@ -1,8 +1,12 @@
 import React from 'react'
 
 const PasswordForm = () => {
+    
   return (
-    <div>PasswordForm</div>
+    <>
+    <input placeholder='password' type='password' onChange={(e)=>{e.target.value}}></input>
+    <button>Mostrar contraseña</button>
+    </>
   )
 }
 
