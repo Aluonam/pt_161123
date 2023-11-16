@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
-const ModalPassword = ({inputPassword}) => {
+
+
+const ModalCounter = ({numberCounter}) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
@@ -15,12 +17,12 @@ const ModalPassword = ({inputPassword}) => {
   return (
     <>
       <Button type="primary" onClick={showModal}>
-         visualiza la contraseña 
+        Mira el contador
       </Button>
-      <Modal title="La contraseña es:" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-        {inputPassword}
+      <Modal title="Contador" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        {numberCounter}
       </Modal>
     </>
   );
 };
-export default ModalPassword;
+export default ModalCounter;
