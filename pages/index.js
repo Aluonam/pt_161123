@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import SwitchCapitalLetter from '@/components/SwitchCapitalLetter'
+import PasswordForm from '@/components/PasswordForm'
 
 
 export default function Home() {
@@ -14,6 +15,8 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
        <SwitchCapitalLetter></SwitchCapitalLetter>
+       <br></br>
+       <PasswordForm></PasswordForm>
       </main>
     </>
   )
