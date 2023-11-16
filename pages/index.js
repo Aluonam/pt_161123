@@ -18,10 +18,13 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
        <SwitchCapitalLetter></SwitchCapitalLetter>
-       <br></br>
+       _____________________________
+       <br/><br/>
        <PasswordForm></PasswordForm>
+       _____________________________
        <br></br>
        <Counter></Counter>
+       _____________________________
        <br></br>
        <DeleteLetter></DeleteLetter>
       </main>
