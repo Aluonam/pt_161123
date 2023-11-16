@@ -3,6 +3,7 @@ import styles from '@/styles/Home.module.css'
 import SwitchCapitalLetter from '@/components/SwitchCapitalLetter'
 import PasswordForm from '@/components/PasswordForm'
 import ModalCounter from '@/components/Modalcounter'
+import Counter from '@/components/Counter'
 
 
 export default function Home() {
@@ -19,7 +20,7 @@ export default function Home() {
        <br></br>
        <PasswordForm></PasswordForm>
        <br></br>
-       <ModalCounter></ModalCounter>
+       <Counter></Counter>
       </main>
     </>
   )
