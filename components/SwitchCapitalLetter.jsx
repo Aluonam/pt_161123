@@ -5,7 +5,8 @@ const SwitchCapitalLetter = () => {
     const [inputUser, setInputUser] = useState()
 
     const handleUpperCase = () => {
-
+        const copyArr = structuredClone(inputUser.split(""))
+        console.log(copyArr)
     }
   return (
     <>
