@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const DeleteLastLetter = () => {
+
+    const [inputUser, setInputUser] = useState()
+    
   return (
-    <div>DeleteLastLetter</div>
+    <>
+    <input onChange={(e)=>{setInputUser(e.target.value)}}></input>
+    <button onClick={()=>{}}>Borra la última letra</button>
+    {inputUser}
+    </>
   )
 }
 
