@@ -5,6 +5,7 @@ import PasswordForm from '@/components/PasswordForm'
 import ModalCounter from '@/components/Modalcounter'
 import Counter from '@/components/Counter'
 import DeleteLetter from '@/components/DeleteLetter'
+import DeleteLastLetter from '@/components/DeleteLastLetter'
 
 
 export default function Home() {
@@ -27,6 +28,10 @@ export default function Home() {
        _____________________________
        <br></br>
        <DeleteLetter></DeleteLetter>
+       <br></br>
+       _____________________________
+       <br></br>
+       <DeleteLastLetter></DeleteLastLetter>
       </main>
     </>
   )
