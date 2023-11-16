@@ -4,6 +4,7 @@ import SwitchCapitalLetter from '@/components/SwitchCapitalLetter'
 import PasswordForm from '@/components/PasswordForm'
 import ModalCounter from '@/components/Modalcounter'
 import Counter from '@/components/Counter'
+import DeleteLetter from '@/components/DeleteLetter'
 
 
 export default function Home() {
@@ -17,10 +18,15 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
        <SwitchCapitalLetter></SwitchCapitalLetter>
-       <br></br>
+       _____________________________
+       <br/><br/>
        <PasswordForm></PasswordForm>
+       _____________________________
        <br></br>
        <Counter></Counter>
+       _____________________________
+       <br></br>
+       <DeleteLetter></DeleteLetter>
       </main>
     </>
   )
